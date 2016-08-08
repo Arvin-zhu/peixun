@@ -1,0 +1,1499 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  font-size: 16px;
+  height: 100%;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_1470146252_0435333.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/font_1470146252_0435333.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1470146252_0435333.woff") format("woff"), url("//at.alicdn.com/t/font_1470146252_0435333.ttf") format("truetype"), url("//at.alicdn.com/t/font_1470146252_0435333.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+#container {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f7f4f2;
+}
+#container .head {
+  width: 100%;
+  max-width: 800px;
+  height: 2.84375rem;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid #e4e4e4;
+}
+#container .swiper-container {
+  width: 92%;
+  height: 2.84375rem;
+  background-color: white;
+}
+#container .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#container .swiper-slide.active {
+  font-size: 1rem;
+  color: #ce102a;
+  border-bottom: 1px solid #ce102a;
+}
+#container .body {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3.53125rem;
+  font-size: 0px;
+}
+#container .thumbnail {
+  width: 8.75rem;
+  display: inline-block;
+  margin-left: 4%;
+  margin-bottom: 0.6875rem;
+  background-color: white;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+#container .thumbnail a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+#container .thumbnail .pic {
+  width: 100%;
+  height: 6.1875rem;
+  background: url("../images/recommend_1.png") no-repeat 0px 0px;
+}
+#container .thumbnail .intro {
+  width: 92%;
+  color: #4e4e4e;
+  line-height: 1.3;
+  height: 1.9rem;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container .thumbnail .price {
+  width: 92%;
+  height: 1.2rem;
+  overflow: hidden;
+  margin: 0 auto;
+  color: #999999;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container .thumbnail .icon {
+  color: #ff4614;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container .thumbnail .num {
+  color: #ff4614;
+  font-size: 1rem;
+  font-family: "SimHei";
+}
+
+#container1 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f4f2;
+}
+#container1 .top {
+  width: 100%;
+  background-color: #f7f4f2;
+}
+#container1 .top .head {
+  width: 100%;
+  height: 11.25rem;
+  background: url("../images/product_info.png") no-repeat 0px 0px;
+  background-size: 100% 100%;
+}
+#container1 .top .car_intro {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3%;
+  padding-bottom: 2.5rem;
+  font-size: 0px;
+  background-color: white;
+}
+#container1 .top h1 {
+  width: 100%;
+  text-align: left;
+  color: #333333;
+  height: 2.4rem;
+  overflow: hidden;
+  font-size: 1rem;
+  font-family: "SimHei";
+}
+#container1 .top .price {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+#container1 .top p {
+  width: 100%;
+  text-align: left;
+  color: #999999;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container1 .top .icon {
+  color: red;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container1 .top .num {
+  color: red;
+  font-size: 1.5rem;
+  font-family: "SimHei";
+}
+#container1 .top .compare {
+  display: inline-block;
+  position: relative;
+  float: right;
+  height: 1.625rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid #999999;
+  border-radius: 0.3125rem;
+  line-height: 1.625rem;
+  text-align: right;
+  max-width: 48%;
+  color: #999999;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container1 .top .compare a {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+#container1 .main {
+  width: 100%;
+  background-color: #f7f4f2;
+}
+#container1 .main h2 {
+  width: 94%;
+  margin: 0 auto;
+  line-height: 1.9375rem;
+  background-color: #f7f4f2;
+  height: 1.9375rem;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+  font-weight: normal;
+}
+#container1 .main table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+#container1 .main table td {
+  width: 50%;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+  height: 2.75rem;
+  color: #999999;
+  font-size: 1rem;
+  font-family: "SimHei";
+}
+#container1 .main table td:last-child {
+  color: #333333;
+  text-align: right;
+}
+#container1 .bottom {
+  position: fixed;
+  right: 0.625rem;
+  bottom: 1.875rem;
+}
+#container1 .bottom .order_online {
+  display: block;
+  margin-bottom: 1.25rem;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: url("../images/img.png") no-repeat 80% -5%;
+  background-size: 1.9375rem;
+  background-color: #ce102a;
+}
+#container1 .bottom .call {
+  display: block;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: url("../images/img.png") no-repeat 80% 27%;
+  background-size: 1.9375rem;
+  background-color: #ce102a;
+}
+
+#container2 {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  font-size: 0px;
+}
+#container2 .left {
+  width: 20%;
+  height: 100%;
+  list-style-type: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#container2 .left li {
+  border: 1px solid #dddddd;
+  border-left: 0px;
+  border-bottom: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  width: 100%;
+  height: 9.09%;
+  overflow: hidden;
+  color: #333333;
+  position: relative;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container2 .left li:first-child {
+  height: 18.18%;
+}
+#container2 .left span {
+  height: 5.03125rem;
+  line-height: 5.03125rem;
+  width: 100%;
+  overflow: hidden;
+}
+#container2 .right {
+  height: 100%;
+  width: 80%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  font-size: 0px;
+  position: absolute;
+  left: 20%;
+  top: 0px;
+}
+#container2 .right ul {
+  display: inline-block;
+  width: 6.28125rem;
+  display: inline-block;
+  white-space: normal;
+  height: 100%;
+  list-style-type: none;
+  vertical-align: top;
+}
+#container2 .right .iconfont {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1rem;
+  margin-left: -1rem;
+  color: #dddddd;
+  font-family: "iconfont";
+  font-style: normal;
+  font-size: 1.5rem;
+}
+#container2 .right li {
+  border: 1px solid #dddddd;
+  border-left: 0px;
+  border-bottom: 0px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  height: 9.09%;
+  overflow: hidden;
+  width: 6.28125rem !important;
+  color: #333333;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container2 .right a {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+}
+#container2 .right li:first-child {
+  width: 6.28125rem !important;
+  height: 18.18%;
+  color: #333333;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container2 .right .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+  color: white;
+  width: 1.1875rem;
+  height: 1.1875rem;
+  background: url("../images/compare1.png") no-repeat 0px 0px;
+  background-size: 100% 100%;
+  font-size: 0.625rem;
+  font-family: "SimHei";
+}
+
+#container4 {
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#container4 .head {
+  width: 100%;
+  max-width: 800px;
+  height: 2.84375rem;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid #e4e4e4;
+}
+#container4 .swiper-container {
+  width: 92%;
+  height: 2.84375rem;
+  background-color: white;
+}
+#container4 .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#container4 .swiper-container .swiper-slide.active {
+  font-size: 1rem;
+  color: #ce102a;
+  border-bottom: 1px solid #ce102a;
+}
+#container4 div.pic {
+  width: 100%;
+  margin-top: 2.875rem;
+  height: 15rem;
+  background: url(../images/about_us.png) no-repeat 0px 0px;
+  background-size: 100% 100%;
+}
+#container4 h1 {
+  width: 94%;
+  margin: 0 auto;
+  color: #333333;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.3125rem;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  text-align: left;
+}
+#container4 .word {
+  width: 94%;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  text-indent: 1.75rem;
+  margin-bottom: 0.3125rem;
+  font-size: 0.875rem;
+  font-family: SimHei;
+}
+
+#container5 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f2f4f7;
+}
+#container5 .head {
+  width: 100%;
+  position: fixed;
+  z-index: 6;
+  height: 2.75rem;
+  overflow: hidden;
+  border-bottom: 1px solid #dddddd;
+  color: #ce102a;
+  line-height: 2.75rem;
+  text-align: center;
+  background-color: white;
+  font-size: 1.125rem;
+  font-family: SimHei;
+}
+#container5 .head .iconfont {
+  margin-left: 0.3125rem;
+  font-family: "iconfont";
+  font-style: normal;
+  font-size: 0.75rem;
+  color: #ce102a;
+}
+#container5 .zhezhao {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: -1;
+}
+#container5 .nav {
+  width: 100%;
+  position: fixed;
+  height: 13.75rem;
+  overflow: scroll;
+  top: 2.75rem;
+  z-index: 5;
+  background-color: white;
+  display: none;
+}
+#container5 .nav ul {
+  list-style-type: none;
+}
+#container5 .nav ul li {
+  width: 100%;
+  height: 2.75rem;
+  overflow: hidden;
+  color: #666666;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  line-height: 2.75rem;
+  font-size: 1rem;
+  font-family: SimHei;
+}
+#container5 .nav ul li.active {
+  color: #ce102a;
+}
+#container5 > ul {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 3.4375rem;
+}
+#container5 > ul li {
+  margin-top: 0.6875rem;
+  height: 8.78125rem;
+  position: relative;
+  border: 1px solid #dddddd;
+  background-color: white !important;
+}
+#container5 > ul li span {
+  width: 92%;
+  margin-left: 4%;
+  border-top: 1px solid #ebebeb;
+  line-height: 1.90625rem;
+  box-sizing: border-box;
+  text-align: left;
+  height: 1.90625rem;
+  color: #999999;
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.75rem;
+  font-family: SimHei;
+}
+#container5 > ul li div {
+  width: 64%;
+  height: 5rem;
+  float: right;
+  margin-top: 0.96875rem;
+  margin-right: 0.84375rem;
+}
+#container5 > ul li div h1 {
+  width: 100%;
+  text-align: left;
+  color: #333333;
+  max-height: 2.275rem;
+  line-height: 1.3;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  font-weight: normal;
+}
+#container5 > ul li div p {
+  width: 100%;
+  max-height: 1.95rem;
+  line-height: 1.3;
+  margin-top: 0.625rem;
+  color: #666666;
+  overflow: hidden;
+  font-size: 0.75rem;
+  font-family: SimHei;
+}
+#container5 > ul li a {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+#container6 {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f2f4f7;
+  overflow: hidden;
+}
+#container6 .recruit {
+  width: 100%;
+  margin-bottom: 0.625rem;
+  background-color: white;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.3125rem;
+}
+#container6 .recruit .head {
+  width: 92%;
+  height: 1.2rem;
+  margin: 0 auto;
+}
+#container6 .recruit h1 {
+  width: 65%;
+  height: 100%;
+  line-height: 1.2rem;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-family: SimHei;
+}
+#container6 .recruit .num {
+  height: 100%;
+  float: right;
+  line-height: 1.2rem;
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  font-size: 0.75rem;
+  font-family: SimHei;
+}
+#container6 .recruit .num > span {
+  color: #ce102a;
+}
+#container6 .recruit > p {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 0.625rem;
+  font-size: 0.75rem;
+  font-family: SimHei;
+}
+#container6 .recruit .date > span {
+  color: #7b7b7b;
+}
+#container6 .recruit ol {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 0.625rem;
+}
+#container6 .recruit ol li {
+  list-style-position: inside;
+  line-height: 1.5;
+  color: #7b7b7b;
+  font-size: 0.625rem;
+  font-family: SimHei;
+}
+
+#container7 {
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#container7 h1 {
+  overflow: hidden;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+#container7 h5 {
+  margin-bottom: 0.8125rem;
+  color: #c9c9c9;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+#container7 .pic {
+  border: 1px solid #dddddd;
+  width: 18.03125rem;
+  height: 7.4375rem;
+  margin: 0 auto;
+  background: url("../images/activity1.png") no-repeat 0px 0px;
+  background-size: 100% 100%;
+}
+#container7 .word {
+  width: 18.03125rem;
+  margin: 0 auto;
+  padding-top: 0.9375rem;
+}
+#container7 .word p {
+  text-align: left;
+  text-indent: 2rem;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: SimHei;
+}
+#container7 .word p:last-child {
+  margin-bottom: 0.9375rem;
+}
+
+#container8 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+#container8 h1 {
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 0.9375rem;
+  font-size: 1rem;
+  font-family: SimHei;
+  margin-bottom: 0.625rem;
+}
+#container8 h2 {
+  width: 100%;
+  height: 0.625rem;
+  overflow: hidden;
+  text-align: center;
+  color: #999999;
+  margin-bottom: 1.25rem;
+  font-size: 0.625rem;
+}
+#container8 p {
+  width: 92%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  text-indent: 2rem;
+}
+
+#container9 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 15.625rem;
+  box-sizing: border-box;
+}
+#container9 .lunbo {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+}
+#container9 .lunbo li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#container9 .lunbo li img {
+  width: 100%;
+  height: 100%;
+}
+#container9 .shadow {
+  width: 100%;
+  height: 1.90625rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: -1.90625rem;
+  position: relative;
+}
+#container9 .shadow span {
+  color: white;
+  margin-left: 4%;
+  line-height: 1.90625rem;
+  font-size: 0.875rem;
+  font-family: "SimHei";
+}
+#container9 .shadow .count {
+  float: right;
+  height: 100%;
+  display: inline-block;
+  list-style-type: none;
+}
+#container9 .shadow .count li {
+  float: left;
+  margin-right: 0.625rem;
+  margin-top: 0.78125rem;
+  height: 0.3125rem;
+  width: 0.3125rem;
+  border-radius: 50%;
+  background-color: white;
+}
+#container9 .shadow .count .active {
+  background-color: #ce102a;
+}
+#container9 .preview {
+  width: 100%;
+  height: 5.625rem;
+  font-size: 0px;
+}
+#container9 .preview a {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  text-decoration: none;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  line-height: 5.625rem;
+  position: relative;
+  z-index: 99;
+  font-size: 1.125rem;
+  font-family: "SimHei";
+}
+#container9 .preview a .banner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+#container9 .menu {
+  min-height: 100%;
+  box-sizing: border-box;
+  background: url("../images/index4.png") no-repeat 0px 0px;
+  background-size: 100% 100%;
+  color: white;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+#container9 .menu .left, #container9 .menu .middle, #container9 .menu .right {
+  width: 5rem;
+  list-style-type: none;
+  position: absolute;
+  left: 33%;
+  top: 50%;
+  margin-top: -4.40625rem;
+}
+#container9 .menu .left li, #container9 .menu .middle li, #container9 .menu .right li {
+  width: 100%;
+  height: 4.3125rem;
+  background: url("../images/index5.png") no-repeat 0px 0px;
+  background-size: 100% 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.1875rem;
+}
+#container9 .menu .left a, #container9 .menu .middle a, #container9 .menu .right a {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  z-index: 99;
+  display: inline-block;
+  width: 76%;
+  left: 12%;
+  top: 12%;
+  height: 76%;
+  opacity: 0;
+}
+#container9 .menu .left p, #container9 .menu .middle p, #container9 .menu .right p {
+  text-align: center;
+  width: 3.2rem;
+  height: 1rem;
+  line-height: 1rem;
+  margin: 0 auto;
+  margin-top: 20%;
+  margin-bottom: 0.3125rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container9 .menu .left span, #container9 .menu .middle span, #container9 .menu .right span {
+  display: block;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container9 .menu .middle {
+  margin-left: 3.875rem;
+  margin-top: -6.60938rem;
+}
+#container9 .menu .right {
+  margin-left: 7.75rem;
+  margin-top: -4.40625rem;
+}
+#container9 .menu .big_menu {
+  width: 7.125rem;
+  height: 6.15625rem;
+  overflow: hidden;
+  background: url("../images/index6.png") no-repeat 0px 0px;
+  background-size: 100% 100%;
+  position: absolute;
+  text-align: center;
+  line-height: 6.15625rem;
+  top: 50%;
+  left: 3%;
+  margin-top: -3.07813rem;
+  font-size: 1.125rem;
+  font-family: "SimHei";
+}
+#container9 .menu .big_menu a {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  z-index: 99;
+  display: inline-block;
+  width: 76%;
+  left: 12%;
+  top: 12%;
+  height: 76%;
+  opacity: 0;
+}
+#container9 .menu .iconfont {
+  display: inline-block;
+  font-family: "iconfont";
+  font-style: normal;
+  font-size: 0.375rem;
+  position: relative;
+  top: -0.0625rem;
+}
+
+#container10 {
+  width: 100%;
+  height: 100%;
+  font-size: 0px;
+}
+#container10 ::-webkit-scrollbar {
+  width: 0px;
+}
+#container10 .left {
+  height: 100%;
+  overflow: auto;
+  display: inline-block;
+  width: 33%;
+  list-style-type: none;
+  background-color: #f2f4f7;
+  padding-bottom: 2.75rem;
+  box-sizing: border-box;
+}
+#container10 .left li {
+  height: 2.75rem;
+  width: 100%;
+  color: #333333;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-right: 1.625rem;
+  box-sizing: border-box;
+  line-height: 2.75rem;
+  font-size: 0.875rem;
+  font-family: "SimHei";
+}
+#container10 .left span {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 0.96875rem;
+  right: 0.375rem;
+  width: 1.3125rem;
+  height: 0.8125rem;
+  background-color: #cccccc;
+  border-radius: 30%;
+  line-height: 0.8125rem;
+  font-size: 0.625rem;
+  font-family: "SimHei";
+}
+#container10 .left .active {
+  background-color: white;
+}
+#container10 .right {
+  width: 67%;
+  height: 100%;
+  display: inline-block;
+  overflow: auto;
+  vertical-align: top;
+  list-style-type: none;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+  padding-bottom: 2.75rem;
+  box-sizing: border-box;
+}
+#container10 .right li {
+  color: #666666;
+  height: 2.75rem;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align-last: left;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.75rem;
+  font-family: "SimHei";
+}
+#container10 .right .active {
+  color: #ce102a;
+}
+#container10 .bottom {
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 2.75rem;
+  background-color: #ce102a;
+  text-align: center;
+  line-height: 2.75rem;
+  font-size: 1.125rem;
+  font-family: "SimHei";
+}
+
+#container3 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f7f4f2;
+}
+#container3 #wrap {
+  width: 100%;
+  height: 15rem;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+}
+#container3 #wrap .amap-logo img {
+  display: none;
+}
+#container3 #wrap .amap-copyright {
+  display: none;
+}
+#container3 #panel {
+  width: 100%;
+  margin-top: 15.6875rem;
+  background-color: #f7f4f2;
+}
+#container3 #panel .amap_lib_placeSearch_list ul {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f7f4f2;
+}
+#container3 #panel .amap_lib_placeSearch_list ul li.poibox {
+  width: 100%;
+  height: 3.875rem;
+  padding: 0px;
+  position: relative;
+  margin-top: 0.65625rem;
+  background-color: white;
+}
+#container3 #panel .amap_lib_placeSearch_list ul li.poibox .poi-info {
+  display: none;
+}
+#container3 #panel .amap_lib_placeSearch_list ul li.poibox .poibox-icon {
+  width: 3.625rem;
+  height: 3.875rem;
+  display: inline-block;
+  margin-left: 15.4375rem;
+  background: url("../images/guide2.png") no-repeat 50% 50%;
+  background-size: 1rem 1.3125rem;
+}
+#container3 #panel .amap_lib_placeSearch_list ul li.poibox .poi-title {
+  display: inline-block;
+  width: 14.5rem;
+  line-height: 3.875rem;
+  height: 100%;
+  overflow: hidden;
+  color: #333333;
+  box-sizing: border-box;
+}
+#container3 #panel .amap_lib_placeSearch_list ul li.poibox .poi-title span {
+  font-size: 0.875rem;
+  font-family: SimHei;
+  line-height: 2.75rem;
+}
+#container3 #panel .amap_lib_placeSearch_list ul li.poibox .poi-title a {
+  display: none;
+}
+#container3 #panel .amap_lib_placeSearch_page {
+  display: none;
+}
+#container3 #panel .amap_lib_placeSearch {
+  border: none;
+}
+#container3 #panel .amap_lib_placeSearch_poi {
+  background: url(../images/guide.png) no-repeat 0px 0px;
+  background-size: 0.9375rem 1.5625rem;
+  height: 1.9375rem;
+  width: 1.1875rem;
+  left: -0.0625rem;
+  font-size: 0px;
+}
+#container3 #panel .poibox {
+  font-size: 0.75rem;
+  min-height: 3rem;
+}
+#container3 #panel .amap_lib_placeSearch .poibox .poi-info p {
+  line-height: 1.25rem;
+}
+#container3 #panel .poi-title {
+  font-size: 0.8125rem;
+  margin-left: 1.5625rem;
+}
+
+#container11 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f7f4f2;
+}
+#container11 .message {
+  width: 100%;
+  height: 3.8125rem;
+  margin: 0 auto;
+  padding-left: 3%;
+  box-sizing: border-box;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden;
+}
+#container11 .message a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #1dbdef;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  font-size: 0px;
+}
+#container11 .message a .company {
+  display: block;
+  width: 80%;
+  line-height: 1.3;
+  height: 1.1875rem;
+  overflow: hidden;
+  margin-top: 0.8125rem;
+  color: #333333;
+  font-size: 1rem;
+  font-family: SimHei;
+}
+#container11 .message a .number {
+  color: #999999;
+  width: 80%;
+  line-height: 1.3;
+  height: 1.1875rem;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-family: "SimHei";
+}
+#container11 .message a .contact {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: inline-block;
+  background: url("../images/img2.png") no-repeat 50% 67%;
+  background-size: 1.9375rem;
+}
+
+#container12 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f7f4f2;
+}
+#container12 .message {
+  width: 100%;
+  height: 3.8125rem;
+  margin: 0 auto;
+  padding-left: 3%;
+  box-sizing: border-box;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden;
+}
+#container12 .message a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #1dbdef;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  font-size: 0px;
+}
+#container12 .message a .company {
+  display: block;
+  width: 80%;
+  line-height: 1.3;
+  height: 1.1875rem;
+  overflow: hidden;
+  margin-top: 0.8125rem;
+  color: #333333;
+  font-size: 1rem;
+  font-family: SimHei;
+}
+#container12 .message a .number {
+  color: #999999;
+  width: 80%;
+  line-height: 1.3;
+  height: 1.1875rem;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-family: "SimHei";
+}
+#container12 .message a .contact {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: inline-block;
+  background: url("../images/img2.png") no-repeat 50% 110%;
+  background-size: 1.9375rem;
+}
+
+#container13 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f7f4f2;
+  box-sizing: border-box;
+}
+#container13 .head {
+  width: 100%;
+  max-width: 800px;
+  height: 2.84375rem;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid #e4e4e4;
+}
+#container13 .swiper-container {
+  width: 92%;
+  height: 2.84375rem;
+  background-color: white;
+}
+#container13 .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#container13 .swiper-slide.active {
+  font-size: 1rem;
+  color: #ce102a;
+  border-bottom: 1px solid #ce102a;
+}
+#container13 form {
+  margin-bottom: 3.59375rem;
+  margin-top: 2.96875rem;
+}
+#container13 form input {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: 2.8125rem;
+  box-sizing: border-box;
+  padding-left: 3%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e4e4e4;
+  outline: none;
+  font-size: 0.875rem;
+  font-family: SimHei;
+}
+#container13 form input:focus {
+  border: #87C6F9 1px solid;
+  box-shadow: inset 0 0 4px #67a6d9;
+}
+#container13 form input::-webkit-input-placeholder {
+  text-align: left;
+  color: #cccccc;
+}
+#container13 form textarea {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.625rem;
+  border: 1px solid #dddddd;
+  font-size: 0.875rem;
+  font-family: SimHei;
+  resize: none;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  box-sizing: border-box;
+  outline: none;
+}
+#container13 form textarea:focus {
+  border: 1px solid #87c6f9;
+  box-shadow: inset 0 0 4px #67a6d9;
+}
+#container13 form textarea::-webkit-input-placeholder {
+  text-align: left;
+  color: #cccccc;
+}
+#container13 form button {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+  height: 2.75rem;
+  background-color: #ce102a;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1.125rem;
+  -webkit-appearance: none;
+}
+
+#container14 {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f7f4f2;
+}
+#container14 .case {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+#container14 .case div.pic {
+  width: 100%;
+  height: 11.84375rem;
+  margin: 0  auto;
+  background-size: 100% 100%;
+}
+#container14 .case h1 {
+  bottom: 5px;
+  width: 100%;
+  overflow: hidden;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: white;
+  padding-left: 3%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: SimHei;
+  font-weight: normal;
+}
+#container14 a {
+  display: inline-block;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+#container14 .case .start {
+  position: absolute;
+  z-index: 3;
+  right: 0px;
+  height: 1.875rem;
+  background-color: #333333;
+  bottom: 3.15625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+#container14 .case .start span {
+  line-height: 1.875rem;
+  color: #ce102a;
+  font-size: 0.9375rem;
+  font-family: "SimHei";
+}
+#container14 .case .end {
+  position: absolute;
+  z-index: 3;
+  right: 0px;
+  height: 1.875rem;
+  background-color: #333333;
+  bottom: 3.15625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+#container14 .case .end span {
+  line-height: 1.875rem;
+  color: #999999;
+  font-size: 0.9375rem;
+  font-family: "SimHei";
+}
+
+@media screen and (max-width: 320px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-height: 568px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html, body {
+    font-size: 18.75px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html, body {
+    font-size: 19.2px;
+  }
+}
+@media screen and (min-width: 412px) {
+  html, body {
+    font-size: 20.7px;
+  }
+}
+@media screen and (min-width: 454px) {
+  html, body {
+    font-size: 22.7px;
+  }
+}
+@media screen and (min-width: 500px) {
+  html, body {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 550px) {
+  html, body {
+    font-size: 27.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html, body {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 650px) {
+  html, body {
+    font-size: 32.5px;
+  }
+}
+@media screen and (min-width: 700px) {
+  html, body {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html, body {
+    font-size: 37.5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html, body {
+    font-size: 38.4px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html, body {
+    font-size: 40px;
+  }
+
+  #container, #container1, #container2, #container3, #container4, #container5,
+  #container6, #container7, #container8, #container9, #container10, #container11, #container12
+  , #container13, #container14 {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
