@@ -907,6 +907,7 @@ html,body{
 					display: block;
 					font-family:"iconfont";
 					font-weight: bold;
+					height:1.2rem;
 					font-size:(16/16)+rem;
 					font-style:normal;
 					color:rgb(125,130,136);
@@ -1067,6 +1068,7 @@ html,body{
 					}
 				}
 				input{
+					width:85%;
 					display: inline-block;
 					height:100%;
 					box-sizing: border-box;

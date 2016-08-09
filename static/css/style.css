@@ -856,6 +856,7 @@ html, body {
   display: block;
   font-family: "iconfont";
   font-weight: bold;
+  height: 1.2rem;
   font-size: 1rem;
   font-style: normal;
   color: #7d8288;
@@ -1007,6 +1008,7 @@ html, body {
   font-family: "Microsoft YaHei";
 }
 #container13 form .wrap input {
+  width: 85%;
   display: inline-block;
   height: 100%;
   box-sizing: border-box;
