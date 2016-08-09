@@ -3,34 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximun-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="../public/css/swiper-3.3.1.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/style2.css">
-	<script type="text/javascript" src="../public/js/swiper-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 	<script type="text/javascript" src="../public/js/jquery-1.12.3.min.js"></script>
 	<script type="text/javascript" src="../static/js/js.js"></script>
-	<title>在线留言</title>
+	<title>在线预约</title>
 </head>
 <body>
 	<div id="container13">
-		<div class="head">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide active"><span>预约保养</span></div>
-					<div class="swiper-slide"><span>预约试驾</span></div> <!--不超过四个字-->
-					<div class="swiper-slide"><span>预约购车</span></div>
-				</div>
-			</div>
-		</div>
 		<form action="#">
-			<input id="name" type="text" name="name" placeholder="请输入您的姓名" />
-			<input id="call" type="text" name="phone" placeholder="请输入您的电话" />
-			<input id="time" type="text" name="time" placeholder="请输入预约时间" />
-			<input id="car" type="text" name="type" placeholder="请输入车型" />
-			<textarea name="message" class="mes" cols="30" rows="10" placeholder="请输入您的留言"></textarea>
+			<div class="wrap"><label for="name">姓名</label><input id="name" type="text" name="name" placeholder="请输入您的姓名" /></div>
+			<div class="wrap"><label for="email">邮箱</label><input id="email" type="text" name="phone" placeholder="请输入您的邮箱" /></div>
+			<div class="wrap"><label for="call">电话</label><input id="call" type="text" name="time" placeholder="请输入您的电话" /></div>
+			<textarea name="message" class="mes" cols="30" rows="10" placeholder="请输入您的意见"></textarea>
 			<button type="submit">提交</button>
 		</form>
+		<div class="nav">
+			<ul>
+				<li><a href="guide.html"><i class="iconfont">&#xe627</i><span>一键导航</span></a></li>
+				<li><a href=call.html><i class="iconfont">&#xe607</i><span>一键拨号</span></a></li>
+				<li><a href="index.html"><i class="iconfont">&#xe62c</i><span>首页</span></a></li>
+				<li><a href="message.html"><i class="iconfont">&#xe624</i><span>短信留言</span></a></li>
+				<li class="active"><a href="order_online.html"><i class="iconfont">&#xe623</i><span>在线预约</span></a></li>
+			</ul>
+		</div>
 	</div>
-<script type="text/javascript">
+<script>
 	container13();
 </script>
 </body>

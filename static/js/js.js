@@ -7,28 +7,29 @@ function container(){
 		freeMode: true
 	})
 }
-function container2(){
-	$(".right .icon").on("click",function(){
-			this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+function container6(){
+	var a=0;
+	$("#container6").ready(function(){
+		$("#container6 .iconfont").on("touchstart",function(){
+			var index=$(this).index(".iconfont");
+			if(a==0){
+				$($(".iconfont")[index]).html("&#xe625");
+				a=1;
+			}else{
+				$($(".iconfont")[index]).html("&#xe61f");
+				a=0;
+			}
+			$($("#container6 ol")[index]).children().toggle();
+		})
 	})
 }
-function container10(){
-	$(".left li").on("click",function(){
-		var index=$(this).index();
-		$(this).addClass("active").siblings().removeClass("active");
-	});
-	$(".right li").on("click",function(){
-		var index=$(this).index();
-		$(this).addClass("active").siblings().removeClass("active");
-	});
-}
 function container13(){
-	$("#container13 .swiper-slide").on("click",function(){
-		$(this).addClass("active").siblings().removeClass("active");
+	var wrap=$(".wrap");
+	$(".wrap").on("click",function(){
+		$(this).addClass("wrap_focus").siblings().removeClass("wrap_focus");
 	});
-	var swiper = new Swiper('.swiper-container', {
-		slidesPerView: 3,
-		freeMode: true
+	$("textarea").on("click",function(){
+		$(".wrap").removeClass("wrap_focus");
 	})
 }
 function container4(){
@@ -57,19 +58,12 @@ function container3(){
 			});
 }
 function container5(){
-	$("#container5 .head").on("touchstart",function(){
-		if($("#container5 .zhezhao").css("opacity")==0){
-			$("#container5 .zhezhao").animate({"opacity":1,"z-index":5},100);
-			$("#container5 .nav").slideDown(300);
-			$("#container5 .head i").html("&#xe625");
-		}else{
-			$("#container5 .zhezhao").animate({"opacity":0,"z-index":-1},100);
-			$("#container5 .nav").slideUp(300);
-			$("#container5 .head i").html("&#xe61f");
-		}
-	})
-	$("#container5 .nav ul li").on("touchstart",function(){
+	$("#container5 .swiper-slide").on("click",function(){
 		$(this).addClass("active").siblings().removeClass("active");
+	});
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 4,
+		freeMode: true
 	})
 }
 function container9(){

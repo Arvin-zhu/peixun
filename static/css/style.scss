@@ -20,7 +20,7 @@ html,body{
 	width:100%;
 	min-height:100%;
 	overflow:hidden;
-	background-color: rgb(247,244,242);
+	background-color: rgb(242,244,247);
 	.head{
 		width:100%;
 		max-width: 800px;
@@ -102,6 +102,7 @@ html,body{
 			left:0px;
 			width:100%;
 			height:100%;
+			-webkit-tap-highlight-color: rgba(255,0,0,0);
 		}
 		p{
 			display:inline-block;
@@ -137,17 +138,17 @@ html,body{
 	min-height:100%;
 	overflow:hidden;
 	position:relative;
-	background-color: rgb(247,244,242);
+	background-color: rgb(242,244,247);
 	.top{
 		width:100%;
-		background-color: rgb(247,244,242);
+		background-color: rgb(242,244,247);
 		.head{
 			width:100%;
 			height:(360/16/2)+rem;
 			background:url("../images/product_info.png") no-repeat 0px 0px;
 			background-size: 100% 100%;
 		}
-		.car_intro{
+		.subject_intro{
 			width:100%;
 			box-sizing: border-box;
 			padding:3%;
@@ -158,8 +159,9 @@ html,body{
 				width:100%;
 				text-align: left;
 				color:rgb(51,51,51);
-				height:2.4rem;
+				max-height:2.4rem;
 				overflow: hidden;
+				margin-bottom: 2%;
 				font:{
 					size:1rem;
 					family: "SimHei";
@@ -194,233 +196,110 @@ html,body{
 					}
 				}
 			}
-			@at-root #container1 .top .compare{
-				display:inline-block;
-				position:relative;
-				float: right;
-				height:(26/16)+rem;
-				padding-left: (8/16)+rem;
-				padding-right: (8/16)+rem;
-				border:1px solid rgb(153,153,153);
-				border-radius: (5/16)+rem;
-				line-height: (26/16)+rem;
-				text-align: right;
-				max-width:48%;
-				color:rgb(153,153,153);
-				font:{
-					size:(12/16)+rem;
-					family: "SimHei";
-				}
-				a{
-					-webkit-tap-highlight-color: rgba(255,0,0,0);
-					position:absolute;
-					left:0px;
-					top:0px;
-					width:100%;
-					height:100%;
-				}
-			}
 		}
 	}
 	.main{
 		width:100%;
-		background-color: rgb(247,244,242);
+		background-color: white;
+		margin-top: (11/16)+rem;
+		padding:{
+			top:3%;
+			bottom:3%;
+		}
 		h2{
-			width:94%;
+			width:100%;
+			box-sizing:border-box;
+			padding-left: 3%;
+			padding-right: 3%;
+			line-height: 1.5;
 			margin:0 auto;
-			line-height: (62/16/2)+rem;
-			background-color: rgb(247,244,242);
-			height: (62/16/2)+rem;
 			font:{
-				size:(12/16)+rem;
-				family: "SimHei";
-				weight: normal;
+				size:(14/16)+rem;
+				//family: "Microsoft YaHei";
+				family: "Sim Hei";
+				//weight: normal;
 			}
 		}
-		table{
+		p{
 			width:100%;
-			margin:0 auto;
-			border-collapse: collapse;
-			background-color: white;
-			td{
-				width:50%;
-				padding-left: 3%;
-				padding-right: 3%;
-				box-sizing: border-box;
-				height: (88/16/2)+rem;
-				color:rgb(153,153,153);
-				font:{
-					size:1rem;
-					family: "SimHei";
-				}
-			}
-			td:last-child{
-				color:rgb(51,51,51);
-				text-align: right;
+			padding-left: 3%;
+			padding-right:3%;
+			box-sizing:border-box;
+			line-height: 1.5;
+			color:rgb(102,102,102);
+			font:{
+				size:(12/16)+rem;
+				family:"Microsoft YaHei";
 			}
 		}
 	}
+	.display_pic{
+		width:100%;
+		height:(473/16/2)+rem;
+		background:url("../images/product_info2.png") no-repeat 0px 0px;
+		background-size: 100% 100%;
+	}
 	.bottom{
 		position:fixed;
-		right:(10/16)+rem;
-		bottom:(30/16)+rem;
+		width:100%;
+		height:(101/16/2)+rem;
+		bottom:0px;
+		font-size:0px;
 		.order_online{
-			display:block;
-			margin-bottom:(20/16)+rem;
+			display:inline-block;
 			-webkit-tap-highlight-color: rgba(255,0,0,0);
-			width:(40/16)+rem;
-			height:(40/16)+rem;
-			border-radius:50%;
-			background:url("../images/img.png") no-repeat 80% -5%;
-			background-size:(62/16/2)+rem;
+			width:50%;
+			height:100%;
+			color:white;
+			text-align: center;
+			text-decoration: none;
+			line-height:(101/16/2)+rem;
 			background-color: rgb(19,174,47);
+			font:{
+				size:1rem;
+				family: "Microsoft YaHei";
+			}
 		}
 		.call{
-			display:block;
+			display:inline-block;
+			text-decoration: none;
+			text-align:center;
+			color:rgb(102,102,102);
+			background-color: rgb(242,244,247);
 			-webkit-tap-highlight-color: rgba(255,0,0,0);
-			width:(40/16)+rem;
-			height:(40/16)+rem;
-			border-radius:50%;
-			background:url("../images/img.png") no-repeat 80% 27%;
-			background-size:(62/16/2)+rem;
-			background-color: rgb(19,174,47);
+			width:50%;
+			height:100%;
+			font:{
+				size:1rem;
+				family: "Microsoft YaHei";
+			}
+			line-height:(101/16/2)+rem;
 		}
 	}
 }
 #container2{
 	width:100%;
-	height:100%;
-	overflow-x:scroll;
-	font-size: 0px;
-	.left{
-		width:20%;
-		height:100%;
-		list-style-type: none;
-		position:absolute;
-		left:0px;
-		top:0px;
-		li{
-			border:1px solid rgb(221,221,221);
-			border-left: 0px;
-			border-top: 0px;
-			box-sizing: border-box;
-			text-align: center;
-			display: -webkit-box;
-			display:-webkit-flex;
-			display:flex;
-			-webkit-justify-content: center;
-			-webkit-align-items: center;
-			justify-content: center;
-			align-items: center;
-			-webkit-box-pack: center;
-			-webkit-box-align: center;
+	min-height:100%;
+	overflow: hidden;
+	background-color: rgb(242,244,247);
+	.case{
+		padding:4%;
+		background-color: white;
+		margin-top: (11/16)+rem;
+		h1{
 			width:100%;
-			height:9.09%;
+			height:1rem;
 			overflow: hidden;
-			color:rgb(51,51,51);
-			position: relative;
 			font:{
-				size:(12/16)+rem;
-				family: "SimHei";
+				size:(14/16)+rem;
 			}
 		}
-		li:first-child{
-			height:18.18%;
-		}
-			span{
-				height:(161/16/2)+rem;
-				line-height:(161/16/2)+rem;
-				width:100%;
-				overflow: hidden;
-			}
-		}
-	.right{
-		height:100%;
-		width:80%;
-		overflow-x: scroll;
-		white-space: nowrap;
-		font-size: 0px;
-		position:absolute;
-		left:20%;
-		top:0px;
-		ul{
-			display: inline-block;
-			width: (201/16/2)+rem;
-			display: inline-block;
-			white-space: normal;
-			height:100%;
-			list-style-type: none;
-			vertical-align: top;
-		}
-		.iconfont{
-			width:2rem;
-			height:2rem ;
-			position:absolute;
-			top:50%;
-			left:50%;
-			margin-top: -1rem;
-			margin-left: -1rem;
-			color:rgb(221,221,221);
-			font-family: "iconfont";
-			font-style: normal;
-			font-size: 1.5rem;
-		}
-		li{
-			border:1px solid rgb(221,221,221);
-			border-left: 0px;
-			border-top: 0px;
-			position:relative;
-			box-sizing: border-box;
-			text-align: center;
-			display:-webkit-box;
-			display: -webkit-flex;
-			display:flex;
-			-webkit-justify-content: center;
-			-webkit-align-items: center;
-			justify-content: center;
-			align-items: center;
-			-webkit-box-pack: center;
-			-webkit-box-align: center;
-			height:9.09%;
-			overflow: hidden;
-			width:(201/16/2)+rem!important;
-			color:rgb(51,51,51);
-			font:{
-				size:(12/16)+rem;
-				family: "SimHei";
-			}
-		}
-		a{
-			-webkit-tap-highlight-color: rgba(255,0,0,0);
-			position:absolute;
-			left:0px;
-			right:0px;
+		.picture{
 			width:100%;
-			height:100%;
-		}
-		li:first-child{
-			width:(201/16/2)+rem!important;
-			height:18.18%;
-			color:rgb(51,51,51);
-			font:{
-				size:(12/16)+rem;
-				family: "SimHei";
-			}
-		}
-		.icon{
-			position:absolute;
-			right:0px;
-			top:0px;
-			text-align: right;
-			color:white;
-			width:(38/16/2)+rem;
-			height:(38/16/2)+rem;
-			background:url("../images/compare1.png") no-repeat 0px 0px;
+			height:(290/16/2)+rem;
+			background:url("../images/success1.png") no-repeat 0px 0px;
 			background-size: 100% 100%;
-			font:{
-				size:(10/16)+rem;
-				family: "SimHei";
-			}
+			margin-top: 4%;
 		}
 	}
 }
@@ -433,14 +312,96 @@ html,body{
 		width:100%;
 		max-width: 800px;
 		height: (91/16/2)+rem;
-		background-color:white;
+		background-color:rgb(19,174,47);
 		position:fixed;
 		z-index: 5;
-		border-bottom:1px solid #e4e4e4;
 		@at-root #container4 .swiper-container {
 			width:92%;
 			height: (91/16/2)+rem;
-			background-color:white;
+			background-color:rgb(19,174,47);
+			.swiper-slide {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				box-sizing:border-box;
+				font:{size:(15/16)+rem;family:SimHei;}
+				color:white;
+				white-space: nowrap;
+				overflow:hidden;
+			}
+			.active{
+				font-size: (17/16)+rem;
+				border-bottom: 1px solid white;
+			}
+		}
+	}
+	div.pic{
+		width:100%;
+		margin-top: (91/16/2)+rem;
+		height:(175/16/2)+rem;
+		background:url(../images/about_us.png) no-repeat 0px 0px;
+		background-size: 100% 100%;
+	}
+	h1{
+		width:100%;
+		color:rgb(51,51,51);
+		margin:{
+			top:(30/16/2)+rem;
+		}
+		font:{
+			size:(16/16)+rem;
+			family: SimHei;
+			weight:normal;
+		}
+	}
+	h2{
+		width:100%;
+		color:rgb(51,51,51);
+		font:{
+			size:(14/16)+rem;
+			family: "SimHei";
+			weight:normal;
+		}
+		text-align: left;
+	}
+	.paragraph{
+		width:94%;
+		margin:0 auto;
+		line-height: 1.5;
+		color:rgb(102,102,102);
+		text-align: left;
+		margin-bottom: (5/16)+rem;
+		font:{
+			size:(14/16)+rem;
+			family: SimHei;
+		}
+	}
+}
+#container5{
+	width:100%;
+	min-height:100%;
+	overflow:hidden;
+	.head{
+		width:100%;
+		max-width: 800px;
+		height: (91/16/2)+rem;
+		background-color:rgb(19,174,47);
+		position:fixed;
+		z-index: 5;
+		border-bottom:1px solid #e4e4e4;
+		@at-root #container5 .swiper-container {
+			width:92%;
+			height: (91/16/2)+rem;
+			background-color:rgb(19,174,47);
 			.swiper-slide {
 				display: -webkit-box;
 				display: -ms-flexbox;
@@ -456,185 +417,59 @@ html,body{
 				align-items: center;
 				box-sizing:border-box;
 				font:{size:(14/16)+rem;family:SimHei;}
-				color:black;
+				color:white;
 				white-space: nowrap;
 				overflow:hidden;
 			}
-			.swiper-slide.active{
+			@at-root #container5 .swiper-slide.active{
 				font:{size:(16/16)+rem;}
-				color:rgb(19,174,47);
-				border-bottom:1px solid rgb(19,174,47);
+				border-bottom:1px solid white;
 			}
 		}
 	}
-	div.pic{
+	.main{
 		width:100%;
-		margin-top: (92/16/2)+rem;
-		height:(480/16/2)+rem;
-		background:url(../images/about_us.png) no-repeat 0px 0px;
-		background-size: 100% 100%;
-	}
-	h1{
-		width:94%;
-		margin:0 auto;
-		color:rgb(51,51,51);
-		margin:{
-			top:(30/16/2)+rem;
-			bottom:(10/16/2)+rem;
-		}
-		font:{
-			size:(14/16)+rem;
-			family: SimHei;
-		}
-		text-align: left;
-	}
-	.word{
-		width:94%;
-		margin:0 auto;
-		line-height: 1.5;
-		color:rgb(102,102,102);
-		text-align: left;
-		text-indent: (28/16)+rem;
-		margin-bottom: (5/16)+rem;
-		font:{
-			size:(14/16)+rem;
-			family: SimHei;
-		}
-	}
-}
-#container5{
-	width:100%;
-	min-height:100%;
-	overflow:hidden;
-	background-color: rgb(242,244,247);
-	.head{
-		width:100%;
-		position:fixed;
-		z-index:6;
-		height:(88/16/2)+rem;
-		overflow:hidden;
-		border-bottom:1px solid rgb(221,221,221);
-		color:rgb(19,174,47);
-		line-height:(88/16/2)+rem;
-		text-align: center;
-		background-color: white;
-		font:{
-			size:(18/16)+rem;
-			family: SimHei;
-		}
-		.iconfont{
-			margin-left: (5/16)+rem;
-			font-family:"iconfont";
-			font-style: normal;
-			font-size: (12/16)+rem;
-			color:rgb(19,174,47);
-		}
-	}
-	.zhezhao{
-		width:100%;
-		height:100%;
-		position:fixed;
-		background-color: rgba(0,0,0,0.3);
-		opacity:0;
-		z-index:-1;
-	}
-	.nav{
-		width:100%;
-		position:fixed;
-		height: 13.75rem;
-		overflow: scroll;
-		top:(88/16/2)+rem;
-		z-index:5;
-		background-color: white;
-		display:none;
-		ul{
-			list-style-type: none;
-			li{
-				width:100%;
-				height:(88/16/2)+rem;
-				overflow: hidden;
-				color:rgb(102,102,102);
-				border-bottom: 1px solid rgb(235,235,235);
-				text-align: center;
-				padding-left:10%;
-				padding-right:10%;
-				box-sizing:border-box;
-				line-height: (88/16/2)+rem;
-				font:{
-					size:1rem;
-					family: SimHei;
-				}
-				&.active{
-					color:rgb(19,174,47);
-				}
-			}
-		}
-	}
-	&>ul{
-		list-style-type: none;
-		width:100%;
-		margin-top: (110/16/2)+rem;
-		li{
-			margin-top: (22/16/2)+rem;
-			height:(281/16/2)+rem;
+		margin-top: (91/16/2)+rem;
+		padding:0 3% 3% 3%;
+		box-sizing: border-box;
+		.news{
+			border-bottom: 1px solid rgb(221,221,221);
+			padding-bottom: 3%;
 			position:relative;
-			border:1px solid rgb(221,221,221);
-			background-color: white!important;
-			span{
-				width:92%;
-				margin-left:4%;
-				border-top:1px solid rgb(235,235,235);
-				line-height:(61/16/2)+rem;
-				box-sizing: border-box;
-				text-align: left;
-				height:(61/16/2)+rem;
-				color:rgb(153,153,153);
-				position:absolute;
-				bottom:0px;
-				font:{
-					size:(12/16)+rem;
-					family: SimHei;
-				}
-			}
-			div{
-				width:64%;
-				height:(160/16/2)+rem;
-				float: right;
-				margin-top: (31/16/2)+rem;
-				margin-right: (27/16/2)+rem;
-				h1{
-					width:100%;
-					text-align: left;
-					color:rgb(51,51,51);
-					max-height:2.275rem;
-					line-height:1.3;
-					overflow: hidden;
-					font:{
-						size:(14/16)+rem;
-						family: SimHei;
-						weight:normal;
-					}
-				}
-				p{
-					width:100%;
-					max-height:1.95rem;
-					line-height:1.3;
-					margin-top: (10/16)+rem;
-					color:rgb(102,102,102);
-					overflow: hidden;
-					font:{
-						size:(12/16)+rem;
-						family:SimHei;
-					}
-				}
-			}
 			a{
-				position: absolute;
-				left:0px;
-				top:0px;
+				position:absolute;
 				width:100%;
 				height:100%;
 				-webkit-tap-highlight-color: rgba(255,0,0,0);
+			}
+			h1{
+				width:100%;
+				height:(79/16/2)+rem;
+				overflow:hidden;
+				line-height:(79/16/2)+rem;
+				color:rgb(51,51,51);
+				font:{
+					size:(18/16)+rem;
+					family: "SimHei";
+					weight:normal;
+				}
+			}
+			.picture{
+				width:100%;
+				height:(290/16/2)+rem;
+				margin-bottom: 0.3rem;
+				background:url("../images/news.png") no-repeat 0px 0px;
+				background-size: 100% 100%;
+			}
+			span{
+				width:100%;
+				display:block;
+				text-align: right;
+				color:rgb(153,153,153);
+				font:{
+					size:(12/16)+rem;
+					family: "Microsoft YaHei";
+				}
 			}
 		}
 	}
@@ -650,41 +485,18 @@ html,body{
 		background-color:white;
 		padding-top: (15/16)+rem;
 		padding-bottom:(5/16)+rem;
-		.head{
-			width:92%;
-			height:1.2rem;
+		h1{
+			width: 92%;
 			margin:0 auto;
-			@at-root #container6 .recruit h1{
-				width: 65%;
-				height:100%;
-				line-height: 1.2rem;
-				display:inline-block;
-				margin:0 auto;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				font:{
-					size:(16/16)+rem;
-					family:SimHei;
-				}
-			}
-			@at-root #container6 .recruit .num{
-				height:100%;
-				float:right;
-				line-height:1.2rem;
-				vertical-align: top;
-				display: inline-block;
-				width:30%;
-				font:{
-					size:(12/16)+rem;
-					family:SimHei;
-				}
-			}
-			@at-root #container6 .recruit .num>span{
-				color:rgb(19,174,47);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			font:{
+				size:(14/16)+rem;
+				family:SimHei;
 			}
 		}
-		&>p{
+		p{
 			width:92%;
 			margin:0 auto;
 			margin-top: (20/16/2)+rem;
@@ -696,19 +508,44 @@ html,body{
 		.date>span{
 			color:rgb(123,123,123);
 		}
+		.num>span{
+			color:rgb(19,174,47);
+		}
 		ol{
 			width:92%;
 			margin: 0 auto;
 			margin-top:(10/16)+rem;
 			li{
+				display: none;
+				list-style-type:none;
 				list-style-position: inside;
+				counter-increment:mycount;
 				line-height: 1.5;
 				color:rgb(123,123,123);
 				font:{
 					size:(10/16)+rem;
 					family:SimHei;
 				}
+
 			}
+			li:before{
+				content: counter(mycount,decimal)".";
+			}
+			li:first-child{display:block!important;};
+		}
+		.iconfont{
+			width:92%;
+			margin:0 auto;
+			margin:{
+				top:(5/16)+rem;
+			}
+			display: block;
+			text-align: center;
+			font-family:"iconfont";
+			font-size:(12/16)+rem;
+			font-weight: bold;
+			font-style:normal;
+			color:rgb(123,123,123);
 		}
 	}
 }
@@ -742,7 +579,7 @@ html,body{
 		width: (577/16/2)+rem;
 		height: (238/16/2)+rem;
 		margin:0 auto;
-		background:url("../images/activity1.png") no-repeat 0px 0px;
+		background:url("../images/index.png") no-repeat 0px 0px;
 		background-size: 100% 100%;
 	}
 	.word{
@@ -806,7 +643,7 @@ html,body{
 	box-sizing: border-box;
 	.lunbo{
 		width:100%;
-		height:(320/16/2)+rem;
+		height:(303/16/2)+rem;
 		overflow: hidden;
 		position:relative;
 		list-style-type: none;
@@ -823,7 +660,6 @@ html,body{
 	.shadow{
 		width:100%;
 		height:(61/16/2)+rem;
-		background-color: rgba(0,0,0,0.4);
 		margin-top: -(61/16/2)+rem;
 		position:relative;
 		span{
@@ -836,10 +672,16 @@ html,body{
 			}
 		}
 		.count{
-			float:right;
+			width:100%;
 			height:100%;
 			display: inline-block;
+			display:-webkit-box;
+			display:-webkit-flex;
+			display:flex;
+			-webkit-justify-content: center;
+			justify-content: center;
 			list-style-type: none;
+			text-align: center;
 			li{
 				float: left;
 				margin-right: (10/16)+rem;
@@ -854,240 +696,88 @@ html,body{
 			}
 		}
 	}
-	.preview{
-		width:100%;
-		height:(180/16/2)+rem;
-		font-size: 0px;
-		a{
-			-webkit-tap-highlight-color: rgba(255,0,0,0);
-			text-decoration: none;
-			display: inline-block;
-			width:50%;
-			height:100%;
-			color:white;
-			overflow: hidden;
-			text-align: center;
-			line-height: (180/16/2)+rem;
-			position:relative;
-			z-index:99;
-			font:{
-				size:(18/16)+rem;
-				family: "SimHei";
-			}
-			.banner{
-				position:absolute;
-				left:0px;
-				top:0px;
-				width:100%;
-				height:100%;
-				background-color: rgba(0,0,0,0.4);
-				z-index: -1;
-			}
-		}
-	}
 	.menu{
-		min-height: 100%;
+		font-size:0;
+		padding-bottom: (111/16/2)+rem;
 		box-sizing: border-box;
-		background:url("../images/index4.png") no-repeat 0px 0px;
-		background-size: 100% 100%;
-		color:white;
-		position:relative;
-		overflow: hidden;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		.left,.middle,.right{
-			  width:(160/16/2)+rem;
-			  list-style-type: none;
-			  position:absolute;
-			  left:33%;
-			  top:50%;
-			  margin-top: -(282/16/4)+rem;
-			  li{
-				  width:100%;
-				  height:(138/16/2)+rem;
-				  background:url("../images/index5.png") no-repeat 0px 0px;
-				  background-size: 100% 100%;
-				  text-align: center;
-				  overflow: hidden;
-				  position:relative;
-				  margin-bottom: (3/16)+rem;
-			  }
-			a{
-				position: absolute;
-				-webkit-tap-highlight-color: rgba(255,0,0,0);
-				z-index: 99;
-				display: inline-block;
-				width:76%;
-				left:12%;
-				top:12%;
-				height:76%;
-				opacity: 0;
-			}
-			  p{
-				  text-align: center;
-				  width:3.2rem;
-				  height:1rem;
-				  line-height: 1rem;
-				  margin:0 auto;
-				  margin-top: 20%;
-				  margin-bottom: (5/16)+rem;
-				  overflow: hidden;
-				  font:{
-					  size:(12/16)+rem;
-					  family: "SimHei";
-				  }
-			  }
-			  span{
-				  display: block;
-				  font-size:(12/16)+rem;
-				  font-family: "SimHei";
-			  }
-		  }
-		.middle{
-			margin-left: (124/16/2)+rem;
-			margin-top: -(423/16/4)+rem;
-		}
-		.right{
-			margin-left: (248/16/2)+rem;
-			margin-top: -(282/16/4)+rem;
-		}
-		.big_menu{
-			width:(228/16/2)+rem;
-			height:(197/16/2)+rem;
-			overflow: hidden;
-			background:url("../images/index6.png") no-repeat 0px 0px;
-			background-size: 100% 100%;
-			position:absolute;
-			text-align: center;
-			line-height: (197/16/2)+rem;
-			top:50%;
-			left:3%;
-			margin-top: -(197/16/4)+rem;
-			font:{
-				size:(18/16)+rem;
-				family: "SimHei";
-			}
-			a{
-				position: absolute;
-				-webkit-tap-highlight-color: rgba(255,0,0,0);
-				z-index: 99;
-				display: inline-block;
-				width:76%;
-				left:12%;
-				top:12%;
-				height:76%;
-				opacity: 0;
-			}
-		}
-		.iconfont{
+		.part{
 			display:inline-block;
-			font-family: "iconfont";
-			font-style: normal;
-			font-size:(6/16)+rem;
-			position: relative;
-			top: -(1/16)+rem;
-		}
-	}
-}
-#container10{
-	width:100%;
-	height: 100%;
-	font-size: 0px;
-	::-webkit-scrollbar{width: 0px;}
-	.left{
-		height: 100%;
-		overflow: auto;
-		display: inline-block;
-		width:33%;
-		list-style-type: none;
-		background-color: rgb(242,244,247);
-		padding-bottom: (88/16/2)+rem;
-		box-sizing: border-box;
-		li{
-			height: (88/16/2)+rem;
-			width:100%;
-			color:rgb(51,51,51);
+			width:45%;
+			height:(194/16/2)+rem;
+			margin-left:3.3%;
+			margin-top: 3.3%;
 			position:relative;
-			overflow:hidden;
-			text-align: center;
-			padding-right: (26/16)+rem;
-			box-sizing: border-box;
-			line-height:(88/16/2)+rem;
-			font:{
-				size:(14/16)+rem;
-				family: "SimHei";
-			}
+			border-radius: (5/16)+rem;
+		}
+		a{
+			position:absolute;
+			width:100%;
+			height:100%;
+			-webkit-tap-highlight-color: rgba(255,0,0,0);
 		}
 		span{
-			display: inline-block;
-			color:white;
 			position:absolute;
-			top:(31/16/2)+rem;
-			right: (6/16)+rem;
-			width:(42/16/2)+rem;
-			height:(26/16/2)+rem;
-			background-color: rgb(204,204,204);
-			border-radius: 30%;
-			line-height:(26/16/2)+rem;
-			font:{
-				size:(10/16)+rem;
-				family: "SimHei";
-			}
-		}
-		.active{
-			background-color: white;
-		}
-	}
-	.right{
-		width:67%;
-		height:100%;
-		display: inline-block;
-		overflow: auto;
-		vertical-align: top;
-		list-style-type: none;
-		padding-left: 3%;
-		padding-right: 3%;
-		box-sizing:border-box;
-		padding-bottom: (88/16/2)+rem;
-		box-sizing: border-box;
-		li{
-			color:rgb(102,102,102);
-			height: (88/16/2)+rem;
 			width:100%;
-			overflow:hidden;
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-box-pack: start;
-			-webkit-justify-content: flex-start;
-			justify-content: flex-start;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			align-items: center;
-			text-align-last: left;
-			box-sizing: border-box;
-			border-bottom: 1px solid rgb(221,221,221);
+			bottom:10%;
+			text-align: center;
+			color:white;
+			height: 1.2rem;
+			line-height: 1.2rem;
+			overflow: hidden;
 			font:{
-				size:(12/16)+rem;
-				family: "SimHei";
+				size:1rem;
+				family: "Microsoft YaHei";
 			}
 		}
-		.active{
-			color:rgb(19,174,47);
+		.part1{
+			background:url("../images/index1.png") no-repeat center 25%;
+			background-size: (72/16/2)+rem (94/16/2)+rem;
+			background-color: rgb(255,24,0);
 		}
-	}
-	.bottom{
-		color:white;
-		width:100%;
-		position: absolute;
-		bottom:0px;
-		height:(88/16/2)+rem;
-		background-color: rgb(19,174,47);
-		text-align: center;
-		line-height:(88/16/2)+rem;
-		font:{
-			size:(18/16)+rem;
-			family: "SimHei";
+		.part2{
+			background:url("../images/index2.png") no-repeat center 25%;
+			background-size: (94/16/2)+rem (82/16/2)+rem;
+			background-color: rgb(255,81,20);
+		}
+		.part3{
+			background:url("../images/index3.png") no-repeat center 25%;
+			background-size: (88/16/2)+rem (90/16/2)+rem;
+			background-color: rgb(240,151,23);
+		}
+		.part4{
+			background:url("../images/index4.png") no-repeat center 25%;
+			background-size: (94/16/2)+rem (68/16/2)+rem;
+			background-color: rgb(206,18,208);
+		}
+		.part5{
+			background:url("../images/index5.png") no-repeat center 25%;
+			background-size: (94/16/2)+rem (81/16/2)+rem;
+			background-color: rgb(255,31,155);
+		}
+		.part6{
+			background:url("../images/index6.png") no-repeat center 25%;
+			background-size: (66/16/2)+rem (88/16/2)+rem;
+			background-color: rgb(242,98,11);
+		}
+		.part7{
+			background:url("../images/index7.png") no-repeat center 25%;
+			background-size: (93/16/2)+rem (86/16/2)+rem;
+			background-color: rgb(238,27,60);
+		}
+		.part8{
+			background:url("../images/index8.png") no-repeat center 25%;
+			background-size: (79/16/2)+rem (94/16/2)+rem;
+			background-color: rgb(34,182,226);
+		}
+		.part9{
+			background:url("../images/index9.png") no-repeat center 25%;
+			background-size: (94/16/2)+rem (73/16/2)+rem;
+			background-color: rgb(126,198,0);
+		}
+		.part10{
+			background:url("../images/index10.png") no-repeat center 25%;
+			background-size: (80/16/2)+rem (94/16/2)+rem;
+			background-color: rgb(92,111,255);
 		}
 	}
 }
@@ -1095,7 +785,9 @@ html,body{
 	width:100%;
 	min-height: 100%;
 	overflow: hidden;
-	background-color: rgb(247,244,242);
+	background-color: rgb(242,244,247);
+	padding-bottom: (122/16/2)+rem;
+	box-sizing: border-box;
 	#wrap{
 		width:100%;
 		height: (480/16/2)+rem;
@@ -1115,12 +807,12 @@ html,body{
 	#panel{
 		width:100%;
 		margin-top: (502/16/2)+rem;
-		background-color: rgb(247,244,242);
+		background-color: rgb(242,244,247);
 		.amap_lib_placeSearch_list{
 			ul{
 				width:100%;
 				margin:0 auto;
-				background-color: rgb(247,244,242);
+				background-color: rgb(242,244,247);
 				li.poibox{
 					width:100%;
 					height:(124/16/2)+rem;
@@ -1188,23 +880,75 @@ html,body{
 		}
 	}
 }
+.nav{
+	width:100%;
+	max-width: 800px;
+	height: (101/16/2)+rem;
+	background-color:white;
+	position:fixed;
+	z-index: 999;
+	bottom:0px;
+	ul{
+		width:100%;
+		height: 100%;
+		list-style-type: none;
+		li{
+			width:20%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			a{
+				display: block;
+				width:100%;
+				height: 100%;
+				text-decoration: none;
+				-webkit-tap-highlight-color: rgba(255,0,0,0);
+				.iconfont{
+					display: block;
+					font-family:"iconfont";
+					font-weight: bold;
+					font-size:(16/16)+rem;
+					font-style:normal;
+					color:rgb(125,130,136);
+					margin-top: (7/16)+rem;
+					margin-bottom: (7/16)+rem;
+				}
+				span{
+					display: block;
+					color:rgb(125,130,136);
+					font:{
+						size:(10/16)+rem;
+						family:SimHei;
+					}
+				}
+			}
+			&.active .iconfont,&.active span{
+				color:rgb(19,174,47);
+			}
+		}
+
+	}
+}
 #container11{
 	width:100%;
 	min-height:100%;
 	overflow:hidden;
-	background-color: rgb(247,244,242);
+	background-color: rgb(242,244,247);
+	padding-bottom: (111/16/2)+rem;
+	box-sizing: border-box;
 	.message{
-		width:100%;
-		height:(122/16/2)+rem;
+		width:(576/16/2)+rem;
 		margin:0 auto;
-		padding-left: 3%;
-		box-sizing:border-box;
+		height:(122/16/2)+rem;
 		background-color:white;
-		border-bottom:1px solid rgb(221,221,221);
 		overflow: hidden;
+		margin-top: 1rem;
+		border:1px solid rgb(19,174,47);
+		box-sizing: border-box;
+		border-radius: (5/16)+rem;
 		a{
-			display: inline-block;
 			width:100%;
+			display: inline-block;
 			height:100%;
 			position:relative;
 			text-decoration: none;
@@ -1214,25 +958,15 @@ html,body{
 			.company{
 				display:block;
 				width:80%;
-				line-height:1.3;
-				height:(19/16)+rem;
+				line-height:(122/16/2)+rem;
+				padding-left: 3%;
+				box-sizing: border-box;
+				height:100%;
 				overflow: hidden;
-				margin-top: (26/16/2)+rem;
-				color:rgb(51,51,51);
+				color:rgb(19,174,47);
 				font:{
 					size:(16/16)+rem;
 					family: SimHei;
-				}
-			}
-			.number{
-				color:rgb(153,153,153);
-				width:80%;
-				line-height:1.3;
-				height:(19/16)+rem;
-				overflow: hidden;
-				font:{
-					size:(14/16)+rem;
-					family: "SimHei";
 				}
 			}
 			.contact{
@@ -1242,8 +976,9 @@ html,body{
 				right:0px;
 				top:0px;
 				display:inline-block;
-				background:url("../images/img.png") no-repeat 50% 67%;
-				background-size: (62/16/2)+rem ;
+				background:url("../images/img.png") no-repeat 50% 125%;
+				background-color: rgb(19,174,47);
+				background-size: (57/16/2)+rem ;
 			}
 		}
 	}
@@ -1252,19 +987,22 @@ html,body{
 		width:100%;
 		min-height:100%;
 		overflow:hidden;
-		background-color: rgb(247,244,242);
+		background-color: rgb(242,244,247);
+		box-sizing: border-box;
+		padding-bottom: (111/16/2)+rem;
 		.message{
-			width:100%;
-			height:(122/16/2)+rem;
+			width:(576/16/2)+rem;
 			margin:0 auto;
-			padding-left: 3%;
-			box-sizing:border-box;
+			height:(122/16/2)+rem;
 			background-color:white;
-			border-bottom:1px solid rgb(221,221,221);
 			overflow: hidden;
+			margin-top: 1rem;
+			border:1px solid rgb(19,174,47);
+			box-sizing: border-box;
+			border-radius: (5/16)+rem;
 			a{
-				display: inline-block;
 				width:100%;
+				display: inline-block;
 				height:100%;
 				position:relative;
 				text-decoration: none;
@@ -1274,25 +1012,15 @@ html,body{
 				.company{
 					display:block;
 					width:80%;
-					line-height:1.3;
-					height:(19/16)+rem;
+					line-height:(122/16/2)+rem;
+					padding-left: 3%;
+					box-sizing: border-box;
+					height:100%;
 					overflow: hidden;
-					margin-top: (26/16/2)+rem;
-					color:rgb(51,51,51);
+					color:rgb(19,174,47);
 					font:{
 						size:(16/16)+rem;
 						family: SimHei;
-					}
-				}
-				.number{
-					color:rgb(153,153,153);
-					width:80%;
-					line-height:1.3;
-					height:(19/16)+rem;
-					overflow: hidden;
-					font:{
-						size:(14/16)+rem;
-						family: "SimHei";
 					}
 				}
 				.contact{
@@ -1302,8 +1030,9 @@ html,body{
 					right:0px;
 					top:0px;
 					display:inline-block;
-					background:url("../images/img.png") no-repeat 50% 110%;
-					background-size: (62/16/2)+rem ;
+					background:url("../images/img.png") no-repeat 50% 45%;
+					background-color: rgb(19,174,47);
+					background-size: (57/16/2)+rem ;
 				}
 			}
 		}
@@ -1312,73 +1041,52 @@ html,body{
 		width:100%;
 		min-height:100%;
 		overflow:hidden;
-		background-color:rgb(247,244,242);
+		background-color:rgb(242,244,247);
+		padding-bottom: (111/16/2)+rem;
 		box-sizing: border-box;
-		.head{
-			width:100%;
-			max-width: 800px;
-			height: (91/16/2)+rem;
-			background-color:white;
-			position:fixed;
-			z-index: 5;
-			border-bottom:1px solid #e4e4e4;
-			@at-root #container13 .swiper-container {
-				width:92%;
-				height: (91/16/2)+rem;
-				background-color:white;
-				.swiper-slide {
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
-					-webkit-justify-content: center;
-					justify-content: center;
-					-webkit-box-align: center;
-					-ms-flex-align: center;
-					-webkit-align-items: center;
-					align-items: center;
-					box-sizing:border-box;
-					font:{size:(14/16)+rem;family:SimHei;}
-					color:black;
-					white-space: nowrap;
-					overflow:hidden;
-				}
-				@at-root #container13 .swiper-slide.active{
-					font:{size:(16/16)+rem;}
-					color:rgb(19,174,47);
-					border-bottom:1px solid rgb(19,174,47);
-				}
-			}
-		}
 		form{
 			margin-bottom:(115/16/2)+rem;
-			margin-top:(95/16/2)+rem;
-			input{
+			.wrap{
 				width:100%;
-				margin:0 auto;
-				display: block;
-				height: (90/16/2)+rem;
-				box-sizing: border-box;
-				padding-left:3%;
-				border-top: none;
-				border-left: none;
-				border-right: none;
+				height:(90/16/2)+rem;
+				font-size: 0;
+				background-color: white;
 				border-bottom:1px solid #e4e4e4;
-				outline: none;
-				font:{
-					size:(14/16)+rem;
-					family:SimHei;
+				padding:{
+					left:3%;
+					top:3px;
+					bottom:3px;
+					right:3%;
+				}
+				box-sizing: border-box;
+				label{
+					color:rgb(51,51,51);
+					font:{
+						size:1rem;
+						family: "Microsoft YaHei";
+					}
+				}
+				input{
+					display: inline-block;
+					height:100%;
+					box-sizing: border-box;
+					line-height: (90/16/2)+rem;
+					padding-left:3%;
+					outline: none;
+					border:none!important;
+					font:{
+						size:(16/16)+rem;
+						family:SimHei;
+					}
+				}
+				input::-webkit-input-placeholder{
+					text-align: left;
+					color:rgb(204,204,204);
 				}
 			}
-			input:focus{
+			.wrap_focus{
 				border:#87C6F9 1px solid;
-				box-shadow: inset 0 0 4px rgba(103, 166, 217, 1);
-			}
-			input::-webkit-input-placeholder{
-				text-align: left;
-				color:rgb(204,204,204);
+				box-shadow: inset 0 0 2px rgba(103, 166, 217, 1);
 			}
 			textarea{
 				display:block;
@@ -1387,7 +1095,7 @@ html,body{
 				margin-top: (10/16)+rem;
 				border:1px solid rgb(221,221,221);
 				font:{
-					size:(14/16)+rem;
+					size:(16/16)+rem;
 					family:SimHei;
 				}
 				resize: none;
@@ -1425,83 +1133,48 @@ html,body{
 #container14{
 	width:100%;
 	min-height:100%;
-	overflow:hidden;
-	background-color: rgb(247,244,242);
+	overflow: hidden;
+	background-color: rgb(242,244,247);
 	.case{
-		width:100%;
-		overflow: hidden;
+		padding:4%;
+		background-color: white;
+		margin-top: (11/16)+rem;
 		position:relative;
-		margin-bottom: (12/16)+rem;
-		div.pic{
+		a{
+			position:absolute;
 			width:100%;
-			height:(379/16/2)+rem;
-			margin:0  auto;
-			background-size:100% 100%;
+			height:100%;
+			-webkit-tap-highlight-color: rgba(255,0,0,0);
 		}
 		h1{
-			bottom:5px;
-			width: 100%;
+			width:100%;
+			height:1rem;
 			overflow: hidden;
-			height:(80/16/2)+rem;
-			line-height: (80/16/2)+rem;
-			background-color: white;
-			padding-left: 3%;
-			box-sizing: border-box;
 			font:{
-				size:(16/16)+rem;
-				family:SimHei;
-				weight:normal;
+				size:(14/16)+rem;
 			}
 		}
-	}
-	a{
-		display: inline-block;
-		position:absolute;
-		-webkit-tap-highlight-color: rgba(255,0,0,0);
-		z-index: 5;
-		width:100%;
-		height:100%;
-		left:0px;
-		top:0px;
-	}
-	.case .start{
-		position:absolute;
-		z-index: 3;
-		right:0px;
-		height:(60/16/2)+rem;
-		background-color: rgb(51,51,51);
-		bottom:(101/16/2)+rem;
-		padding:{
-			left:(10/16)+rem;
-			right:(10/16)+rem;
-		}
-		span{
-			line-height: (60/16/2)+rem;
+		h2{
+			width:100%;
+			height:1rem;
 			color:rgb(19,174,47);
+			overflow: hidden;
+			margin-top: 1%;
 			font:{
-				size:(15/16)+rem;
+				size:(12/16)+rem;
+				weight: normal;
 				family: "SimHei";
 			}
 		}
-	}
-	.case .end{
-		position:absolute;
-		z-index: 3;
-		right:0px;
-		height:(60/16/2)+rem;
-		background-color: rgb(51,51,51);
-		bottom:(101/16/2)+rem;
-		padding:{
-			left:(10/16)+rem;
-			right:(10/16)+rem;
-		}
-		span{
-			line-height: (60/16/2)+rem;
+		.over{
 			color:rgb(153,153,153);
-			font:{
-				size:(15/16)+rem;
-				family: "SimHei";
-			}
+		}
+		.picture{
+			width:100%;
+			height:(290/16/2)+rem;
+			background:url("../images/success1.png") no-repeat 0px 0px;
+			background-size: 100% 100%;
+			margin-top: 1%;
 		}
 	}
 }
